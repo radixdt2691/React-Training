@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.list-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+.card-wrapper{
+    width: 17rem;
+    padding: 2rem;
+    background: #e5e5e5;
+    border-radius: 0.3rem;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+.card-wrapper:hover{
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.img{
+    border-radius: 50%;
+    border: 1px solid teal;
+    object-fit: cover;
+}
+.card-wrapper .name , .card-wrapper .job{
+    text-transform: capitalize;
+    margin: 0.3rem 0;
+    letter-spacing: 0.15rem;
+    color: teal;
+}
