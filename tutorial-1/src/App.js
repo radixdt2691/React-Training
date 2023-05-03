@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import "./index.css";
-
+// import Personalinfolist from './Personalinfolist';
 function Student(){
   return(
     <section className='student-card'>
@@ -9,6 +9,7 @@ function Student(){
         <StudentIDCard />
         <StudentIDCard />
         <StudentIDCard />
+        {/* <Personalinfolist/> */}
     </section>
   );
 }
