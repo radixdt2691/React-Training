@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import propTypes from "prop-types";
 import './index.css'
 
 const Person = ({img,name,job,children}) =>{
@@ -13,10 +13,18 @@ const Person = ({img,name,job,children}) =>{
         </article>
     )
 }
+Person.propTypes={
+    name: propTypes.string.isRequired,
+    job: propTypes.string
+}
+Person.defaultProps={
+    name: "Jainish", 
+    job: "Bhailang Dev"
+}
 const PersonList = () => {
     return(
         <section className='list-wrapper'>
-            <Person img="62" name="Miller" job="Software Developer"/>
+            <Person img="62" />
             <Person img="42" name="Stoakes" job="MLOPS"/>
             <Person img="99" name="Jainish" job="Data Scientist"/>
         </section>
